@@ -1,2 +1,2 @@
 @echo off
-python c:\Users\Arash\Desktop\test\openweather\app.py %*
+streamlit run c:\Users\Arash\Desktop\test\openweather\app.py %*
