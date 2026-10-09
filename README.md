@@ -31,7 +31,7 @@ cd weather
 pip install streamlit requests
 ```
 
-Put your API key in `app.py` (`api_key = "..."`, preferably loaded from an environment variable), then:
+Export your key as `OPENWEATHER_API_KEY`, then:
 
 ```bash
 streamlit run app.py

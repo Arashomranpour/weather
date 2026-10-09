@@ -2,7 +2,10 @@ import requests
 import streamlit as st
 
 st.header("Weather app")
-api_key = "b91a21c78dd9e104afa89a5d12f29311"
+api_key = os.getenv("OPENWEATHER_API_KEY")
+if not api_key:
+    st.error("Set the OPENWEATHER_API_KEY environment variable.")
+    st.stop()
 city = st.text_input("Enter city: ") 
 
 if city:  # بررسی اینکه ورودی city خالی نباشد
